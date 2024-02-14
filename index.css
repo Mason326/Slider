@@ -1,0 +1,57 @@
+.wrapSlider{
+    width: 50%;
+    margin: auto;
+    border: thin solid gray;
+    box-shadow: 10px 5px 5px rgb(149, 149, 149);
+
+}
+.button-container, .label-container{
+    text-align: center;
+    margin: 10px;
+}
+
+.slides{
+    margin: auto;
+    padding: 0px 75px;
+    margin-top: 25px;
+    width: 50%;
+    overflow: hidden;
+    background-color: rgb(199, 199, 199);
+}
+.lbl{
+    background-color: white;
+    margin: 0 5px;
+    padding: 0px 7px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+#button1:checked ~ .label-container label:nth-of-type(1),
+#button2:checked ~ .label-container label:nth-of-type(2),
+#button3:checked ~ .label-container label:nth-of-type(3),
+#button4:checked ~ .label-container label:nth-of-type(4),
+#button5:checked ~ .label-container label:nth-of-type(5) {
+    background-color: rgb(172, 104, 104);
+}
+
+input{
+    display: none;
+}
+
+.img{
+    position: absolute;
+    opacity: 0;
+    transform: rotate(180deg) scale(0.3) translate(100px, 50px);
+}
+
+#button1:checked ~ .slides img:nth-of-type(1),
+#button2:checked ~ .slides img:nth-of-type(2),
+#button3:checked ~ .slides img:nth-of-type(3),
+#button4:checked ~ .slides img:nth-of-type(4),
+#button5:checked ~ .slides img:nth-of-type(5){
+    position: relative;
+    transition-property: all;
+    opacity: 1;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in;
+    transform: none;
+}
