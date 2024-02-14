@@ -42,7 +42,7 @@ input{
     margin: auto;
     width: 100%;
     opacity: 0;
-    transform: rotate(180deg) scale(0.3) translate(100px, 50px);
+    transform: rotate(180deg) scale(0.3) translate(100%);
 }
 
 #button1:checked ~ .slides img:nth-of-type(1),
