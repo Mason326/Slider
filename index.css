@@ -3,7 +3,6 @@
     margin: auto;
     border: thin solid gray;
     box-shadow: 10px 5px 5px rgb(149, 149, 149);
-
 }
 .button-container, .label-container{
     text-align: center;
@@ -13,7 +12,7 @@
 .slides{
     margin: auto;
     padding: 0px 75px;
-    margin-top: 25px;
+    margin-top: 30px;
     width: 50%;
     overflow: hidden;
     background-color: rgb(199, 199, 199);
@@ -39,6 +38,8 @@ input{
 
 .img{
     position: absolute;
+    margin: auto;
+    width: 100%;
     opacity: 0;
     transform: rotate(180deg) scale(0.3) translate(100px, 50px);
 }
